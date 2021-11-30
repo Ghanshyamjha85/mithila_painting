@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         margin: "0.5rem 0",
         borderRadius: '1rem',
+       
         [theme.breakpoints.down('sm')]: {
             flexDirection: 'column',
             margin: "1rem 2rem"
@@ -38,14 +39,19 @@ const useStyles = makeStyles((theme) => ({
         margin: 'auto 0',
     },
     details_content: {
-        padding: "9rem 5rem",
+        padding: "12rem 5rem",
         textAlign: 'center',
+       
 
 
     },
     heading: {
         fontFamily: "inter !important",
-        color: '#F08000',
+        
+    },
+    link:{
+        color: '#303C6C',
+        style:"none"
     },
     right_gradiant : {
         backgroundImage: 'linear-gradient( 240deg, #FF885B -17.95%, rgba(255, 255, 255, 0) 25.57%)'
@@ -74,7 +80,7 @@ function Card({ painting }) {
             <div className={`${classes.details_box} ${id % 2 === 0 ? classes.left_gradiant : classes.right_gradiant} `} >
                 <div className={classes.details_content} >
                     <Typography variant='h2' component='h2' className={classes.heading} >
-                       <Link to={`/${painting.id}`}> {paintingName}</Link>
+                       <Link to={`/${painting.id}`} className={classes.link}> {paintingName}</Link>
                     </Typography>
                     <Typography variant='h6' component='h6' className={classes.price} >
                     </Typography>

@@ -9,17 +9,25 @@ import Paintings from '../db.json'
 
 const useStyles = makeStyles({
     main: {
+      
+       width:"80%",
+       margin:"auto"
 
     },
-    img: {
-        width: '100%',
-    },
+    // img: {
+    //     width: '100%',
+    //     height:"60rem"
+    // },
     content : {
-        margin : "2rem"
+        margin : "2rem",
+        align:"center !important"
     }, 
     desc : {
         padding: "3rem 0",
         fontFamily: "Poppins !important"
+    },
+    heading:{
+       
     }
 })
 
@@ -37,11 +45,9 @@ function Details() {
 
     return (
         <div className={classes.main}>
-            <div className={classes.image}>
-                <img src={`/images/${imageUrl}`} alt={paintingName} className={classes.img} />
-            </div>
+           
             <div className={classes.content} >
-                <Typography variant='h1' component='h1' className="heading" >
+                <Typography variant='h1' component='h1' className="heading" className={classes.heading} align="center">
                     {paintingName}
                 </Typography>
                 <Typography variant='h4' component='h4' className={classes.desc} >
