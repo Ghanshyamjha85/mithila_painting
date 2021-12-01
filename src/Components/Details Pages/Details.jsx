@@ -40,6 +40,7 @@ function Details() {
 
     const painting = Paintings.filter( painting => painting.id == id)[0]
 
+    // eslint-disable-next-line no-unused-vars
     const { imageUrl, paintingName, artistName, comments, desc } = painting
     const classes = useStyles()
 
