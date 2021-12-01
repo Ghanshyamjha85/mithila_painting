@@ -28,7 +28,7 @@ function HideOnScroll(props) {
     );
 }
 
-const pages = [['Our Collection', '#'], ["Our Galary", 'galary'], ["About Us", '#']];
+const pages = [['Our Collection', 'collections'], ["Our Galary", 'galary'], ["About Us", 'about']];
 const settings = ['Profile', 'Logout'];
 
 const Header = (props) => {
