@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     },
     link:{
         color: '#303C6C',
-        style:"none"
+        textDecoration:"none"
     },
     right_gradiant : {
         backgroundImage: 'linear-gradient( 240deg, #FF885B -17.95%, rgba(255, 255, 255, 0) 25.57%)'
