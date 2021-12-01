@@ -1,6 +1,5 @@
 import Card from './Cards'
-
-import paintings from '../db.json';
+import paintings from '../../db.json';
 import { Typography } from '@mui/material';
 
 function Galary() {

@@ -28,7 +28,7 @@ function HideOnScroll(props) {
     );
 }
 
-const pages = [['Our Collection', '#'], ["Our Galary", 'galary'], ["About Us", '#']];
+const pages = [['Our Collection', 'collections'], ["Our Galary", 'galary'], ["About Us", 'about']];
 const settings = ['Profile', 'Logout'];
 
 const Header = (props) => {
@@ -112,7 +112,7 @@ const Header = (props) => {
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {pages.map(([name, link]) => (
-                                 <Link to={`/${link}`} style={{textDecoration:'none'}}>
+                                 <Link to={`/${link}`} style={{textDecoration:'none', color: 'white'}}>
                                 <Button
                                     key={name}
                                     onClick={handleCloseNavMenu}

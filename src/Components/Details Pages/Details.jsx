@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 import { makeStyles } from "@material-ui/core";
 import WriterDetails from "./WriterDetails"
 import Reviews from './Reviews'
-import Paintings from '../db.json'
+import Paintings from '../../db.json'
 
 
 const useStyles = makeStyles({
