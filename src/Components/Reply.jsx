@@ -23,6 +23,15 @@ const useStyles = makeStyles({
         borderColor: "red",
         textAlign: 'center'
     },
+    heading:{
+        fontSize:"2.4rem !important",
+        fontWeigth:"400 !important"
+    },
+
+    details:{
+        fontSize:"1.8rem !important",
+     
+    }
 
 })
 
@@ -36,7 +45,7 @@ function Reply({reply}) {
                 <img src='images/painting5.jpg' className={classes.image} />
             </div>
             <div className={classes.comment_details}>
-                <Typography variant='h4' component='h3' className="heading">
+                <Typography variant='h4' component='h4' className="heading">
                     {reply.username}
                 </Typography>
                 <Typography variant='h5' component='div' className="details">
