@@ -9,6 +9,8 @@ function Galary() {
       padding: '0 2rem'
     }
   }
+
+  //
   
   return (
 
