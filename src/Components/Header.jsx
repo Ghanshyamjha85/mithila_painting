@@ -112,7 +112,7 @@ const Header = (props) => {
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {pages.map(([name, link]) => (
-                                 <Link to={`/${link}`} style={{textDecoration:'none'}}>
+                                 <Link to={`/${link}`} style={{textDecoration:'none', color: 'white'}}>
                                 <Button
                                     key={name}
                                     onClick={handleCloseNavMenu}
