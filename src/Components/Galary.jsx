@@ -1,10 +1,8 @@
 import Card from './Cards'
 import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax"
 import paintings from '../db.json';
-import HomeContent from './HomeContent';
-import HomeCarousel from './HomeCarousel';
 
-function Home() {
+function Galary() {
 
   const classes = {
     main: {
@@ -49,12 +47,9 @@ function Home() {
           />
           </div>
         )
-      })} 
-        <HomeCarousel />
-      <HomeContent />
-  
+      })}   
     </div>
   );
 }
 
-export default Home;
+export default Galary;
