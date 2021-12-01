@@ -1,43 +1,26 @@
 import Card from './Cards'
-import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax"
+
 import paintings from '../db.json';
+import { Typography } from '@mui/material';
 
 function Galary() {
 
   const classes = {
     main: {
       padding: '0 2rem'
+    },
+
+    head:{
+      margin:"3rem auto",
+    
     }
+
   }
   
   return (
 
      <div className="App">
-       <ParallaxProvider>
-        <ParallaxBanner
-          className="your-class"
-          layers={[
-            {
-              image: '/images/banner.jpg',
-              amount: 0.5,
-            },
-            {
-              children : <h1 style ={{
-                color : 'Black',
-                fontSize: '30px',
-                textAlign: 'center',
-                marginTop: '20rem',
-              }}>This is the  Banner Children</h1>,
-              amount: 0,
-            },
-          ]}
-          style={{
-            height: '50rem',
-          }}
-        >
-        </ParallaxBanner> 
-
-      </ParallaxProvider>
+         <div style={classes.head}><Typography  variant="h1" align="center"> Our Collections</Typography></div>
        {paintings.map(painting => {
         return (
           <div style={classes.main} >
