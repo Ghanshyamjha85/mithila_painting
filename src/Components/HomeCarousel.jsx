@@ -18,7 +18,10 @@ const useStyles = makeStyles({
 
 const data=[
     {
-        images:"./carousel/banner1.png"
+        images:"./carousel/banner0.jpg"
+    },
+    {
+        images:"./carousel/banner1.jpg"
     },
 
     {
@@ -26,22 +29,28 @@ const data=[
     },
 
     {
-        images:"./carousel/banner3.webp"
+        images:"./carousel/banner3.jpg"
     },
 
     {
-        images:"./carousel/banner4.webp"
+        images:"./carousel/banner4.jpg"
     },
     {
         images:"./carousel/banner5.jpg"
     },
 
     {
-        images:"./carousel/banner6.png"
+        images:"./carousel/banner6.jpg"
     },
 
     {
         images:"./carousel/banner7.jpg"
+    },
+    {
+        images:"./carousel/banner8.jpg"
+    },
+    {
+        images:"./carousel/banner9.jpg"
     },
 ];
 
@@ -71,7 +80,7 @@ const HomeCarousel = () => {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
+        <div>
 
 
             <Carousel
@@ -93,6 +102,7 @@ const HomeCarousel = () => {
                 itemClass="carousel-item-padding-40-px"
                 renderDotsOutside
                 customDot={<customDot />}
+                className={classes.root}
             >
               {
                 data.map((element)=>(
