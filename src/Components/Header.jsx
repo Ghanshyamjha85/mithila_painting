@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
+import { Link } from 'react-router-dom';
 
 function HideOnScroll(props) {
     const { children } = props;
@@ -27,8 +28,7 @@ function HideOnScroll(props) {
     );
 }
 
-
-const pages = ['Our Collectiosn', 'Galery', "About Us"];
+const pages = [['Our Collection', '#'], ["Our Galary", 'galary'], ["About Us", '#']];
 const settings = ['Profile', 'Logout'];
 
 const Header = (props) => {
@@ -94,11 +94,12 @@ const Header = (props) => {
                                     display: { xs: 'block', md: 'none' },
                                 }}
                             >
-                                {pages.map((page) => (
+                                {pages.map( page => {
+                                    return (
                                     <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                        <Typography textAlign="center">{page}</Typography>
+                                    <Typography textAlign="center"> <Link  to={`/${page}`} >{page}</Link></Typography>   
                                     </MenuItem>
-                                ))}
+                                    )})}
                             </Menu>
                         </Box>
                         <Typography
@@ -110,14 +111,16 @@ const Header = (props) => {
                             LOGO
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                            {pages.map((page) => (
+                            {pages.map(([name, link]) => (
+                                 <Link to={`/${link}`} style={{textDecoration:'none'}}>
                                 <Button
-                                    key={page}
+                                    key={name}
                                     onClick={handleCloseNavMenu}
                                     sx={{ my: 2, color: 'white', display: 'block' }}
                                 >
-                                    {page}
+                                   {name} 
                                 </Button>
+                                </Link>
                             ))}
                         </Box>
 
