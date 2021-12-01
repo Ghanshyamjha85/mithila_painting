@@ -118,7 +118,7 @@ function Reviews(props) {
                 </React.Fragment>
             )}
             <div className={classes.newCommentArea}>
-                <Typography variant='h2' component='div' className="heading">Leave a New Comment</Typography>
+                <Typography variant='h2' component='div' className="heading">What do you you feel about this?</Typography>
                 <TextareaAutosize minRows={5} className={classes.textarea}
                     onChange={onTextAreaChange}
                     value = {textInput} />

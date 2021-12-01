@@ -1,6 +1,8 @@
 import Card from './Cards'
 import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax"
-import paintings from '../db.json'
+import paintings from '../db.json';
+import HomeContent from './HomeContent';
+import HomeCarousel from './HomeCarousel';
 
 function Home() {
 
@@ -48,6 +50,9 @@ function Home() {
           </div>
         )
       })} 
+        <HomeCarousel />
+      <HomeContent />
+  
     </div>
   );
 }
