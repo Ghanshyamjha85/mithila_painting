@@ -13,9 +13,6 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
-import { CssBaseline } from '@mui/material';
-import PropTypes from 'prop-types';
-import { width } from '@mui/system';
 
 function HideOnScroll(props) {
     const { children } = props;
