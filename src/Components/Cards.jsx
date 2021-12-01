@@ -41,14 +41,11 @@ const useStyles = makeStyles((theme) => ({
     details_content: {
         padding: "12rem 5rem",
         textAlign: 'center',
-       
-
-
     },
     heading: {
-        fontFamily: "inter !important",
-        
+        fontFamily: "inter !important",   
     },
+    
     link:{
         color: '#303C6C',
         textDecoration:"none"
