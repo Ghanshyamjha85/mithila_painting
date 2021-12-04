@@ -118,12 +118,12 @@ function Contact() {
   const data = [
     {
       content:
-        " Interested in Photoshoot?? Simply, pick up the phone to chat with a member of our team.",
+        " Interested in more painting?? Simply, pick up the phone to chat with a member of our team.",
       detail: "+91 1234567890",
     },
     {
       content:
-        " Interested in Photoshoot?? Simply, pick up the phone to chat with a member of our team.",
+        " Interested in more painting?? Simply, pick up the phone to chat with a member of our team.",
       detail: "+91 1234567890",
     },
   ];
