@@ -6,6 +6,7 @@ import Galary from './Components/Galary Pages/Galary';
 import Home from './Components/Home Pages/Home.jsx';
 import Collections from './Components/Collections';
 import AboutUs from './Components/AboutUs';
+import Contact from './Components/Contact';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
                 <Route path='/collections' element = { <Collections />} />
                 <Route path='/about' element = { <AboutUs />} />
                 <Route path='/:id' exact element={< Details />} />
+                <Route path='/contact' element = { <Contact />} />
             </Routes>
         </BrowserRouter>
     )
