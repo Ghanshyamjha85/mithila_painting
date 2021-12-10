@@ -5,7 +5,6 @@ import React from 'react';
 const useStyles = makeStyles({
     root:{
         margin:"4rem auto 0 auto",
-  
     },
 
     image:{
@@ -17,8 +16,8 @@ const useStyles = makeStyles({
     },
     content_div:{
         width:"80% !important",
-        margin:"0 auto"
-        
+        margin:"0 auto",
+        color: 'grey'
     }
    });
 

@@ -45,7 +45,7 @@ function WriterDetails(props) {
             </div>
             <div className= {classes.content}>
                 <Typography variant="h2" component="h2" className = "heading">
-                    Fredrick Armstrong
+                    {props.artistName}
                 </Typography>
                 <Typography variant="h4" component='div' className = {classes.desc}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!

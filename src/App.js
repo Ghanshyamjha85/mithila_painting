@@ -7,6 +7,8 @@ import Home from './Components/Home Pages/Home.jsx';
 import Collections from './Components/Collections';
 import AboutUs from './Components/AboutUs';
 import Contact from './Components/Contact';
+import FooterContact from './Components/FooterContact';
+import NavBar from './Components/NavBar';
 
 function App() {
 
@@ -17,11 +19,12 @@ function App() {
                 <Route path='/home' element={<Home />} />
                 <Route path="/" element={<Navigate replace to="/home" />} />
                 <Route path='/galary' exact element={<Galary />} />
-                <Route path='/collections' element = { <Collections />} />
+                <Route path='/collections' element = { <Galary />} />
                 <Route path='/about' element = { <AboutUs />} />
                 <Route path='/:id' exact element={< Details />} />
                 <Route path='/contact' element = { <Contact />} />
             </Routes>
+            <FooterContact />
         </BrowserRouter>
     )
 }

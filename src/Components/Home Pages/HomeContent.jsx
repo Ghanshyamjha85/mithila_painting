@@ -8,6 +8,9 @@ const useStyles = makeStyles({
      margin:"5rem auto 0 auto",
      textAlign:"left",
      width:"80%"
+ },
+ details : {
+     color: 'gray'
  }
 });
 const HomeContent = () => {
@@ -16,7 +19,7 @@ const HomeContent = () => {
         <div className={classes.root}>
             <Typography variant="h2" align="center"> Madhubani Painting (Mithila Painting)</Typography>
             <br></br><br></br>
-            <Typography variant="h4">
+            <Typography variant="h4" className={classes.details}>
             Madhubani art, also known as Mithila art, is a rich tradition of domestic ritual painting that takes its name from the region in northern Bihar where it began and continues to thrive. Historically, women made Madhubani paintings on the freshly plastered walls and floors of mud huts. These skills and techniques were passed down for centuries, preserving Madhubani’s unique qualities, and today both men and women paint in this style onto cloth, handmade paper and canvas.
             <br></br><br></br>
             Madhubani paintings typically depict nature, social themes and Hindu deities. The sun, moon and religious plants like tulsi are common elements, as are scenes from ancient epics and daily life, including the royal court and weddings. Animals like peacocks, fish, crocodiles and elephants also frequently appear in Madhubani art.

@@ -171,8 +171,6 @@ function Contact() {
           src="https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=en&amp;q=bihar,%20madhubani+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
       </div>
-
-      <FooterContact />
     </div>
   );
 }

@@ -46,15 +46,17 @@ function Details() {
 
     return (
         <div className={classes.main}>
-           
+           <div>
+               <img src={`/images/${imageUrl}`} width='100%' alt={paintingName} />
+           </div>
             <div className={classes.content} >
                 <Typography variant='h1' component='h1' className="heading" className={classes.heading} align="center">
                     {paintingName}
                 </Typography>
                 <Typography variant='h4' component='h4' className={classes.desc} >
-                        {desc}
+                    {desc}
                 </Typography>
-                <WriterDetails />
+                <WriterDetails artistName = {artistName}/>
                 <Reviews comments = {painting.comments} />
             </div>
         </div>
